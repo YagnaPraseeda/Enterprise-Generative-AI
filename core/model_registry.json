@@ -1,0 +1,64 @@
+[
+    {
+        "name": "llama-3.3-70b-versatile",
+        "provider": "groq",
+        "version": "3.3",
+        "description": "Meta's most capable open-source model. Excellent for reasoning, coding, and complex analysis.",
+        "cost_tier": "free",
+        "max_tokens": 8192,
+        "supports_streaming": true,
+        "capabilities": [
+            "text-generation",
+            "chat",
+            "reasoning",
+            "code",
+            "analysis"
+        ],
+        "status": "active"
+    },
+    {
+        "name": "llama-3.1-8b-instant",
+        "provider": "groq",
+        "version": "3.1",
+        "description": "Lightweight Llama variant optimized for ultra-fast, low-latency responses.",
+        "cost_tier": "free",
+        "max_tokens": 8192,
+        "supports_streaming": true,
+        "capabilities": [
+            "text-generation",
+            "chat"
+        ],
+        "status": "active"
+    },
+    {
+        "name": "gemma2-9b-it",
+        "provider": "groq",
+        "version": "2.0",
+        "description": "Google's Gemma 2 model — efficient and strong at instruction following.",
+        "cost_tier": "free",
+        "max_tokens": 8192,
+        "supports_streaming": true,
+        "capabilities": [
+            "text-generation",
+            "chat",
+            "reasoning"
+        ],
+        "status": "active"
+    },
+    {
+        "name": "mixtral-8x7b-32768",
+        "provider": "groq",
+        "version": "1.0",
+        "description": "Mistral's mixture-of-experts model with 32K context window.",
+        "cost_tier": "free",
+        "max_tokens": 32768,
+        "supports_streaming": true,
+        "capabilities": [
+            "text-generation",
+            "chat",
+            "reasoning",
+            "code"
+        ],
+        "status": "active"
+    }
+]

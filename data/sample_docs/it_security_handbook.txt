@@ -1,0 +1,137 @@
+IT SECURITY HANDBOOK
+Version 4.2 | Effective Date: January 1, 2025
+Department: Information Security
+
+1. INTRODUCTION
+
+This handbook provides comprehensive guidelines for information security practices
+across the organization. All employees, contractors, and authorized third parties
+must adhere to these standards to protect enterprise information assets.
+
+2. ACCESS MANAGEMENT
+
+2.1 Authentication Standards
+- Multi-factor authentication (MFA) required for all systems
+- Password requirements:
+  * Minimum 14 characters
+  * Mix of uppercase, lowercase, numbers, and symbols
+  * Password rotation every 90 days
+  * No reuse of last 12 passwords
+- Single Sign-On (SSO) must be used where available
+- Biometric authentication approved for physical access
+
+2.2 Authorization Principles
+- Least privilege access: Users receive minimum necessary permissions
+- Role-Based Access Control (RBAC) is the standard access model
+- Access reviews conducted quarterly
+- Privileged access requires additional approval and monitoring
+- Service accounts must have dedicated owners and regular reviews
+
+2.3 Account Lifecycle
+- Account provisioning within 24 hours of approved request
+- Account deprovisioning within 4 hours of termination
+- Dormant accounts disabled after 60 days of inactivity
+- Temporary accounts expire automatically after defined period
+
+3. NETWORK SECURITY
+
+3.1 Network Architecture
+- Network segmentation between production, development, and corporate
+- DMZ for all internet-facing services
+- Zero Trust architecture implementation in progress
+- Micro-segmentation for critical application tiers
+
+3.2 Firewall Management
+- Default deny policy for all traffic
+- Rule reviews conducted monthly
+- Unused rules removed within 30 days
+- Change management required for all modifications
+
+3.3 VPN and Remote Access
+- Corporate VPN required for remote access to internal resources
+- Split tunneling prohibited for corporate devices
+- Always-on VPN for managed devices
+- Remote access logging and monitoring required
+
+4. ENDPOINT SECURITY
+
+4.1 Device Management
+- All corporate devices managed through MDM/EDR solutions
+- Automatic OS updates within 72 hours of release
+- Endpoint Detection and Response (EDR) on all devices
+- Full disk encryption required (BitLocker/FileVault)
+
+4.2 BYOD Policy
+- Personal devices allowed only with MDM enrollment
+- Containerization required for corporate data
+- Remote wipe capability must be enabled
+- Minimum OS version requirements enforced
+
+4.3 Removable Media
+- USB storage devices prohibited on production systems
+- Approved encrypted USB devices only for data transfer
+- Automated scanning of removable media
+- Data loss prevention (DLP) controls for external transfers
+
+5. APPLICATION SECURITY
+
+5.1 Secure Development Lifecycle (SDL)
+- Security requirements defined during design phase
+- Static Application Security Testing (SAST) in CI/CD pipeline
+- Dynamic Application Security Testing (DAST) before deployment
+- Third-party penetration testing annually
+- Security code review for all critical changes
+
+5.2 API Security
+- OAuth 2.0/OIDC for API authentication
+- Rate limiting on all public APIs
+- Input validation and output encoding
+- API versioning and deprecation policies
+- API gateway for centralized security enforcement
+
+5.3 Cloud Security
+- Cloud Security Posture Management (CSPM) required
+- Infrastructure as Code (IaC) security scanning
+- Container image scanning before deployment
+- Secrets management using approved vaults (Azure Key Vault, HashiCorp Vault)
+- Cloud workload protection platforms (CWPP) deployed
+
+6. INCIDENT RESPONSE
+
+6.1 Incident Classification
+- P1 (Critical): Active data breach, ransomware, advanced persistent threat
+- P2 (High): Successful phishing, unauthorized access detected
+- P3 (Medium): Malware detected and contained, policy violation
+- P4 (Low): Failed attack attempts, minor policy deviations
+
+6.2 Response Procedures
+P1 Response (Critical):
+- Immediate: Security Operations Center (SOC) engages
+- 15 minutes: Incident commander assigned
+- 30 minutes: Initial assessment complete
+- 1 hour: Executive notification
+- 4 hours: Containment actions implemented
+
+6.3 Post-Incident Activities
+- Root cause analysis within 5 business days
+- Lessons learned review within 10 business days
+- Control improvements implemented within 30 days
+- Updated threat intelligence shared across teams
+
+7. SECURITY AWARENESS
+
+7.1 Training Requirements
+- Annual security awareness training mandatory for all employees
+- Quarterly phishing simulations
+- Role-specific training for IT and development staff
+- New hire security orientation within first week
+- Training completion tracked and reported to management
+
+7.2 Reporting Obligations
+- Suspicious emails reported to phishing@company.com
+- Security incidents reported to security-ops@company.com
+- Lost or stolen devices reported within 1 hour
+- Unauthorized access attempts reported immediately
+
+For security questions, contact the Information Security Team at
+security@company.com or call the Security Hotline at ext. 5555.

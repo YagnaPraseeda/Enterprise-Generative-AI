@@ -1,0 +1,194 @@
+/* ═══════════════════════════════════════════════════ */
+/*  Enterprise GenAI Platform — Premium Dark Theme    */
+/* ═══════════════════════════════════════════════════ */
+
+/* Base & Reset */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+    --accent-teal: #14b8a6;
+    --accent-green: #10b981;
+    --accent-amber: #f59e0b;
+    --accent-red: #ef4444;
+    --gradient-primary: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    --gradient-success: linear-gradient(135deg, #10b981, #14b8a6);
+    --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.15);
+    --radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Streamlit Overrides */
+.stApp {
+    background-color: var(--bg-primary) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+.block-container {
+    padding: 2rem 3rem !important;
+    max-width: 1200px !important;
+}
+
+/* Sidebar Styling */
+section[data-testid="stSidebar"] {
+    background: var(--bg-secondary) !important;
+    border-right: 1px solid var(--bg-tertiary) !important;
+}
+
+section[data-testid="stSidebar"] .stMarkdown {
+    color: var(--text-primary) !important;
+}
+
+/* Typography */
+h1 {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+}
+
+h2, h3 {
+    color: var(--text-primary) !important;
+    font-weight: 700 !important;
+}
+
+p, li, span {
+    color: var(--text-secondary);
+}
+
+/* Chat Messages */
+.stChatMessage {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--bg-tertiary) !important;
+    border-radius: var(--radius) !important;
+    padding: 16px !important;
+    margin-bottom: 12px !important;
+}
+
+/* Buttons */
+.stButton > button {
+    background: var(--gradient-primary) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: var(--radius) !important;
+    font-weight: 600 !important;
+    padding: 10px 24px !important;
+    transition: var(--transition) !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: var(--shadow-glow) !important;
+}
+
+/* Input Fields */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--bg-tertiary) !important;
+    border-radius: var(--radius) !important;
+    color: var(--text-primary) !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.stTextInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus {
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+}
+
+/* Select Boxes */
+.stSelectbox > div > div {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--bg-tertiary) !important;
+    border-radius: var(--radius) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: var(--bg-secondary) !important;
+    border-radius: var(--radius) !important;
+    color: var(--text-secondary) !important;
+    font-weight: 500 !important;
+    border: 1px solid var(--bg-tertiary) !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background: var(--gradient-primary) !important;
+    color: white !important;
+    border-color: transparent !important;
+}
+
+/* Custom Cards */
+.source-card {
+    background: var(--bg-tertiary);
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin: 4px 0;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+}
+
+.badge {
+    background: var(--accent-blue);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.metric-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--bg-tertiary);
+    border-radius: var(--radius);
+    padding: 20px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.metric-card:hover {
+    border-color: var(--accent-blue);
+    box-shadow: var(--shadow-glow);
+}
+
+/* File Uploader */
+.stFileUploader {
+    background: var(--bg-secondary) !important;
+    border: 2px dashed var(--bg-tertiary) !important;
+    border-radius: var(--radius) !important;
+}
+
+/* Dividers */
+hr {
+    border-color: var(--bg-tertiary) !important;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background: var(--bg-secondary) !important;
+    border-radius: var(--radius) !important;
+    color: var(--text-primary) !important;
+}

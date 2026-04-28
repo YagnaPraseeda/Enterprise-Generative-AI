@@ -1,0 +1,46 @@
+# Enterprise Generative AI Knowledge Platform
+# Core Dependencies
+
+# --- API Framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# --- LLM & RAG ---
+langchain==0.3.14
+langchain-groq==0.3.2
+langchain-huggingface==0.1.2
+langchain-community==0.3.14
+langchain-chroma==0.2.2
+chromadb==0.6.3
+sentence-transformers==3.4.1
+
+# --- Document Processing ---
+pypdf==5.1.0
+python-docx==1.1.2
+
+# --- Embeddings & ML ---
+scikit-learn==1.6.1
+numpy==1.26.4
+
+# --- Governance ---
+detoxify==0.5.2
+
+# --- Configuration ---
+python-dotenv==1.0.1
+pydantic==2.10.5
+pydantic-settings==2.7.1
+
+# --- Data & Evaluation ---
+pandas==2.2.3
+
+# --- MLOps ---
+mlflow==2.19.0
+
+# --- Frontend ---
+streamlit==1.41.1
+requests==2.32.3
+
+# --- Testing ---
+pytest==8.3.4
+httpx==0.28.1
